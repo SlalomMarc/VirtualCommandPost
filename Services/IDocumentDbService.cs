@@ -11,8 +11,8 @@ namespace sdcs.vcp
 
         Task<List<Case>> GetCasesAsync();
 
-        Task SaveCaseAsync(Case MyCase, CpUser myUser, bool isNewItem);
+        Task SaveCaseAsync(Case myCase, CpUser myUser, bool isNewItem);
 
-        Task DeleteCase(Case myCase);
+        Task DeleteCase(Case myCase, CpUser myUser);
     }
 }
